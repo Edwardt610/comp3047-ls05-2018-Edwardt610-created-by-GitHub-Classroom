@@ -31,14 +31,14 @@ module.exports.bootstrap = async function (done) {
 
   sails.getInvalidIdMsg = function (opts) {
 
-    if (opts.id && isNaN(parseInt(opts.id))) {
-        return "Primary key specfied is invalid (incorrect type).";
-    }
-
-    if (opts.fk && isNaN(parseInt(opts.fk))) {
-        return "Foreign key specfied is invalid (incorrect type).";
-    }
-
+    // if (opts.id && isNaN(parseInt(opts.id))) {
+    //   return "Primary key specfied is invalid (incorrect type).";
+    // }
+    
+    // if (opts.fk && isNaN(parseInt(opts.fk))) {
+    //   return "Foreign key specfied is invalid (incorrect type).";
+    // }
+    
     return null;        // falsy
 
 }
